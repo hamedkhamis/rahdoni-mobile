@@ -6,7 +6,7 @@
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
       <link href="https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css" rel="stylesheet" type="text/css" />
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
 
       <!--Let browser know website is optimized for mobile-->
             <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -113,6 +113,7 @@ owl-carousel .owl-stage-outer {
             margin-bottom:10px;
             flex-basis:calc(22% - 5px);
         }
+}
 
 
 
@@ -128,6 +129,132 @@ owl-carousel .owl-stage-outer {
 
 
 
+.card-img-top{
+    width: 38%;
+    height: 121px;
+}
+.cart-1{
+      overflow: hidden;
+      height: 147px;
+      position: relative !important;
+      display: flex !important;
+      flex-direction: row-reverse !important;
+}
+.card .card-title{
+  font-size: 13px;
+  text-align: right;
+}
+.card-text{
+  font-size: 10px;
+  text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.rating:not(:checked) > label{
+    color: #b7b922;
+}
+
+
+
+    /* :not(:checked) is a filter, so that browsers that don’t support :checked don’t 
+      follow these rules. Every browser that supports :checked also supports :not(), so
+      it doesn’t make the test unnecessarily selective */
+    .rating:not(:checked) > input {
+        position:absolute;
+        top:-9999px;
+        clip:rect(0,0,0,0);
+    }
+
+    .rating:not(:checked) > label {
+        float:right;
+        width:1em;
+        /* padding:0 .1em; */
+        overflow:hidden;
+        white-space:nowrap;
+        cursor:pointer;
+        font-size:300%;
+        /* line-height:1.2; */
+        color: #ffeb01;
+}
+
+    .rating:not(:checked) > label:before {
+        content: '★ ';
+    }
+
+    .rating > input:checked ~ label {
+        color: dodgerblue;
+        
+    }
+
+    .rating:not(:checked) > label:hover,
+    .rating:not(:checked) > label:hover ~ label {
+        color: dodgerblue;
+        
+    }
+
+    .rating > input:checked + label:hover,
+    .rating > input:checked + label:hover ~ label,
+    .rating > input:checked ~ label:hover,
+    .rating > input:checked ~ label:hover ~ label,
+    .rating > label:hover ~ input:checked ~ label {
+        color: dodgerblue;
+        
+    }
+
+    .rating > label:active {
+        position:relative;
+        top:2px;
+        left:2px;
+    }
+.rating{
+    font-size: 10px;
+}
+.lead-price-hamed{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 110px;
+    right: -4px;
+}
+
+
+
+
+
+
+
+
+.robbon_badge {
+  background-color: #ef5661;
+  height: 100px;
+  right: -50px;
+  position: absolute;
+  top: -50px;
+  width: 100px;
+  -webkit-transform: rotate(45deg);
+}
+
+.robbon_badege_text {
+  color: #f5f5f5;
+  font-size: 19px;
+  font-weight: bold;
+  right: -9px;
+  top: 70px;
+  position: absolute;
+  width: 80px;
+}
       </style>
     </head>
 
@@ -249,8 +376,60 @@ shopping_cart
 
 
 
+<div class="container">
+  <diw class="row ">
+
+<div class="col-xs-12">
+
+         <div class="card cart-1 hoverable">
+            <img class="card-img-top img-fluid" src="https://www.rahdoni.com/images/bens/xgX04CBfoak4AO68Nk4X33uZixOW15Z9LY13PIifuch7IuPAnogFBBE3Y3zbIMG_5138.JPG" alt="img">
 
 
+
+
+
+            <div class="card-body">
+
+                                   <div class=" lead-price-hamed rating">
+                     <input type="radio" id="star5" name="rating" value="5" />
+                     <label for="star5" title="Kinda bad">5 stars</label>
+                     <input type="radio" id="star4" name="rating" value="4" />
+                     <label for="star4" title="Kinda bad">4 stars</label>
+                     <input type="radio" id="star3" name="rating" value="3" />
+                     <label for="star3" title="Kinda bad">3 stars</label>
+                     <input type="radio" id="star2" name="rating" value="2" />
+                     <label for="star2" title="Sucks big tim">2 stars</label>
+                     <input type="radio" id="star1" name="rating" value="1" />
+                     <label for="star1" title="Sucks big time">1 star</label>
+                  </div>
+
+
+
+
+
+
+               <h4 class="card-title">رستوران مسلم</h4>
+               <p class="card-text">یکی از بهترین رستوران های تهران در قلب بازار</p>
+                  <div class=" lead-price-hamed div-ico-hamed div-ico-hamed-sm"><i class=" shop-ico-hamed shop-ico-hamed-single flaticon-bag"></i><span class="shop-count-hamed shop-count-hamed-single">300</span></div>
+               <div>
+               </div>
+            </div>
+               <div class="robbon_badge">
+                  <span class="robbon_badege_text">۵۰٪</span>
+               </div>
+               <div class="card-footer">salam</div>
+         </div>
+
+
+
+</div>
+      
+
+
+
+
+  </diw>
+</div>
 
 
 
@@ -282,7 +461,7 @@ shopping_cart
 </script>
 
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/materialize.min.js"></script>
 <script src="js/init.js"></script>
           <script src="https://www.rahdoni.com/js/owl.carousel.min.js"></script>
