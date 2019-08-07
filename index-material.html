@@ -1,0 +1,284 @@
+ <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link href="https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css" rel="stylesheet" type="text/css" />
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+      <!--Let browser know website is optimized for mobile-->
+            <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+      <link rel="stylesheet" href="https://www.rahdoni.com/css/owl.carousel.min.css">
+
+      <link rel="stylesheet" href="https://www.rahdoni.com/css/owl.theme.default.min.css">
+
+      <link rel="stylesheet" href="https://www.rahdoni.com/css/owl.theme.default.min.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+            <style type="text/css">
+      @font-face {
+    font-family: 'Vazir';
+    src: url('Vazir.eot');
+    /* IE9 Compat Modes */
+    src: url('Vazir.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('Vazir.woff2') format('woff2'), /* Super Modern Browsers */
+    url('Vazir.woff') format('woff'), /* Pretty Modern Browsers */
+    url('Vazir.ttf') format('truetype'), /* Safari, Android, iOS */
+}
+body{
+  font-family: 'Vazir' !important;
+}
+
+.nav-wrapper{
+  background-color: white;
+}
+.khat{
+  color: black;
+}
+.fasele {
+    margin: 0 10px;
+}
+.search-field{
+  text-align: right !important;
+}
+.search-text{
+  text-align: right !important;
+}
+.owl-carousel {
+  display: block;
+  width: 99%;
+  z-index: 1;
+  margin-bottom: -40px;
+}
+
+owl-carousel .owl-stage-outer {
+  position: relative;
+  overflow: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  margin-top: -20px;
+}
+
+.owl-carousel .owl-item img {
+    height: 135px;
+    border-radius: 14px;
+  margin-bottom: 40px;
+}
+.owl-nav{
+  display: none;
+}
+.filter_rows-ac{
+  margin-top: 10px;
+}
+.title-bon{
+      padding: 3px 0;
+    margin-top: 14px;
+}
+     .simple-grid{
+        padding:0 10px;
+        display:-webkit-box;
+        display:-moz-box;
+        display:-block;
+        display:-webkit-flex;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-between;
+        margin-top: -10px;
+    }
+     .simple-grid__item{
+        margin-bottom:5px;
+        flex-basis:calc(50% - 5px);
+        box-shadow:0 1px 8px rgba(0,0,0,0.12);
+        transition:.3s box-shadow;
+        border-radius:7px;
+        text-align:center;
+        background:#f2f2f2;
+    }
+     .simple-grid__item img{
+        max-width:100%;
+        border-radius:7px;
+        display:block;
+        margin:auto;
+    }
+     .simple-grid__item:hover{
+        box-shadow:0 1px 12px rgba(0,0,0,0.25);
+    }
+     @media only screen and (min-width:768px){
+         .simple-grid{
+            margin-bottom: 20px;
+            padding:0;
+        }
+         .simple-grid__item{
+            margin-bottom:10px;
+            flex-basis:calc(22% - 5px);
+        }
+      </style>
+    </head>
+
+    <body>
+<!-- Dropdown Structure -->
+
+<nav>
+  <div class="nav-wrapper">
+    <a href="" class="brand-logo"><img src="https://www.rahdoni.com/images/logo_rahdooni.png" height="41px" width="135px"></a>
+    <ul class="right ">
+      <!-- Dropdown Trigger -->
+      <li>  <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons khat">menu</i></a>
+</li>
+    </ul>
+
+    <ul class="left ">
+      <!-- Dropdown Trigger -->
+<a href="#" data-target="side2" class="sidenav-trigger"><i class="material-icons khat fasele">
+search
+</i></a>
+    </ul>
+
+        <ul class="left ">
+      <!-- Dropdown Trigger -->
+<i class="material-icons khat">
+shopping_cart
+</i>
+    </ul>
+  </div>
+</nav>
+  <ul id="slide-out" class="sidenav">
+            <button type="button" class="close" data-dismiss="sidenav" aria-label="Close">
+          <span aria-hidden="true" style="margin-right: 10px">&times;</span>
+        </button>
+    <li><div class="user-view">
+      <div class="background">
+        <img src="images/office.jpg">
+      </div>
+      <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
+      <a href="#name"><span class="white-text name">John Doe</span></a>
+      <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+    </div></li>
+    <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+    <li><a href="#!">Second Link</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="subheader">Subheader</a></li>
+    <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+  </ul>
+
+
+
+  <div class="sidenav" id="side2">
+    <div class="input-field col s6">
+      <input value="رستوران " id="first_name2" type="text" class="validate search-field">
+      <label class="active search-text" for="first_name2 ">جستجو بر اساس نیاز شما</label>
+    </div>
+  </div>
+
+<div class="jumbotron text-center title-bon">
+                <div>
+                    <div class="title title-center clear">
+                        <h2>بن های تخفیف</h2>
+                    </div>
+                </div>
+            </div>
+
+   <div class="filter_rows-ac">
+
+
+   <div class="slider_container_item owl-carousel">
+      <div class="slider_item"><img src="https://www.rahdoni.com/images/sliders/bKtM1QycI4JL9ajaBvkVBhdO4lXHknsoSmKAilahgZb5Hu0KAxFteAhxw9vhSketch2121416261.jpg" alt=""></div>
+      <div class="slider_item"><img src="https://www.rahdoni.com/images/sliders/Q54Et6WB4idVY70DvBqShVTsP3kaFh9uzpx9X2iU45nV35Z8ZOEBMVnZDiG2Sketch2121322511.jpg" alt=""></div>
+      <div class="slider_item"><img src="https://www.rahdoni.com/images/sliders/98xXXxLwELOZ2SE5KzVzUL9lzlCHvotoFWMottaJzzKdM5fBGVBi6RKmPxwXSketch21214258.jpg" alt=""></div>
+      <div class="slider_item"><img src="https://www.rahdoni.com/images/sliders/48TPw4NNaj6qM0M0xLxMZ93JVxsAstYuc6xCRKRpbDoJWySC2os00iKRU9l7Sketch212141418.png" alt=""></div>
+   </div>
+  </div> 
+
+
+<div class="container">
+
+    <div class="simple-grid">
+        <a class="simple-grid__item " href="">
+            <img src="https://www.rahdoni.com/images/food_ca.png" alt="استخر">
+        </a>
+        <a class="simple-grid__item " href="">
+            <img src="https://www.rahdoni.com/images/cinema_ca.png" alt="شهربازی">
+        </a>
+        <a class="simple-grid__item " href="">
+            <img src="https://www.rahdoni.com/images/fun_cat.png" alt="مجموعه">
+        </a>
+        <a class="simple-grid__item " href="">
+            <img src="https://www.rahdoni.com/images/house_ca.png" alt="مجموعه">
+        </a>
+        <a class="simple-grid__item " href="">
+            <img src="https://www.rahdoni.com/images/education_ca.png" alt="مجموعه">
+        </a>
+        <a class="simple-grid__item " href="">
+            <img src="https://www.rahdoni.com/images/dr_ca.png" alt="مجموعه">
+        </a>
+        <a class="simple-grid__item " href="">
+            <img src="https://www.rahdoni.com/images/food_ca.png" alt="مجموعه">
+        </a>
+        <a class="simple-grid__item " href="">
+            <img src="https://www.rahdoni.com/images/cinema_ca.png" alt="مجموعه">
+        </a>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    $(".dropdown-trigger").dropdown();
+  
+</script>
+
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script src="js/init.js"></script>
+          <script src="https://www.rahdoni.com/js/owl.carousel.min.js"></script>
+      <script type="text/javascript">
+        $(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+      loop:false,
+      rtl:true,
+      autoplay:true,
+      autoplayTimeout:8000,
+      responsive:{
+        0:{
+            items:1,
+            nav:true,
+            loop:true,
+            rtl:true,
+        },
+        600:{
+            items:1,
+            nav:false,
+            rtl:true,
+            loop:true,
+        },
+        1000:{
+            items:1,
+            nav:false,
+            loop:true
+        }
+    }
+    });
+
+  });
+      </script>
+    </body>
+  </html>
