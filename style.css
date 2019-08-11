@@ -1,0 +1,469 @@
+      @font-face {
+    font-family: 'Vazir';
+    src: url('Vazir.eot');
+    /* IE9 Compat Modes */
+    src: url('css/font/Vazir.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('css/font/Vazir.woff2') format('woff2'), /* Super Modern Browsers */
+    url('css/font/Vazir.woff') format('woff'), /* Pretty Modern Browsers */
+    url('css/font/Vazir.ttf') format('truetype'), /* Safari, Android, iOS */
+}
+body{
+  font-family: 'Vazir' !important;
+}
+
+.nav-wrapper{
+  background-color: white;
+}
+.khat{
+  color: black;
+}
+.fasele {
+    margin: 0 10px;
+}
+.search-field{
+  text-align: right !important;
+}
+.search-text{
+  text-align: right !important;
+}
+.owl-carousel {
+  display: block;
+  width: 99%;
+  z-index: 1;
+  margin-bottom: -40px;
+}
+
+owl-carousel .owl-stage-outer {
+  position: relative;
+  overflow: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  margin-top: -20px;
+}
+
+.owl-carousel .owl-item img {
+    height: 135px;
+    border-radius: 0px;
+  margin-bottom: 30px;
+}
+.owl-nav{
+  display: none;
+}
+.filter_rows-ac{
+    margin-top: 10px;
+    margin-right: -4px;
+    margin-left: 1px;
+  }
+.title-bon{
+    padding: 5px 0px 1px 0;
+    margin: 9px 0 9px 0;
+}
+     .simple-grid{
+        padding:0 10px;
+        display:-webkit-box;
+        display:-moz-box;
+        display:-block;
+        display:-webkit-flex;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-between;
+        margin-top: 0px;
+    }
+     .simple-grid__item{
+        margin-bottom:5px;
+        flex-basis:calc(50% - 5px);
+        box-shadow:0 1px 8px rgba(0,0,0,0.12);
+        transition:.3s box-shadow;
+        border-radius:7px;
+        text-align:center;
+        background:#f2f2f2;
+    }
+     .simple-grid__item img{
+        max-width:100%;
+        border-radius:7px;
+        display:block;
+        margin:auto;
+    }
+     .simple-grid__item:hover{
+        box-shadow:0 1px 12px rgba(0,0,0,0.25);
+    }
+     @media only screen and (min-width:768px){
+         .simple-grid{
+            margin-bottom: 20px;
+            padding:0;
+        }
+         .simple-grid__item{
+            margin-bottom:10px;
+            flex-basis:calc(22% - 5px);
+        }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card-img-top{
+    float: right;
+    width: 33%;
+    height: 90px;
+}
+.cart-1{
+      overflow: hidden;
+      height: 140px;
+      position: relative !important;
+      display: table;
+      flex-direction: row-reverse !important;
+}
+.card .card-title{
+      margin: -13px 138px 17px 0;
+  display: block;
+  font-size: 13px;
+  text-align: right;
+}
+.card-text{
+      margin: -4px 138px 10px 0;
+  font-size: 10px;
+  text-align: right;
+}
+.card-footer{
+      padding: 7px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.rating:not(:checked) > label{
+    color: #b7b922;
+}
+
+
+
+    /* :not(:checked) is a filter, so that browsers that don’t support :checked don’t 
+      follow these rules. Every browser that supports :checked also supports :not(), so
+      it doesn’t make the test unnecessarily selective */
+    .rating:not(:checked) > input {
+        position:absolute;
+        top:-9999px;
+        clip:rect(0,0,0,0);
+    }
+
+    .rating:not(:checked) > label {
+        float:right;
+        width:1em;
+        /* padding:0 .1em; */
+        overflow:hidden;
+        white-space:nowrap;
+        cursor:pointer;
+        font-size:300%;
+        /* line-height:1.2; */
+        color: #ffeb01;
+}
+
+    .rating:not(:checked) > label:before {
+        content: '?';
+    }
+
+    .rating > input:checked ~ label {
+        color: dodgerblue;
+        
+    }
+
+    .rating:not(:checked) > label:hover,
+    .rating:not(:checked) > label:hover ~ label {
+        color: dodgerblue;
+        
+    }
+
+    .rating > input:checked + label:hover,
+    .rating > input:checked + label:hover ~ label,
+    .rating > input:checked ~ label:hover,
+    .rating > input:checked ~ label:hover ~ label,
+    .rating > label:hover ~ input:checked ~ label {
+        color: dodgerblue;
+        
+    }
+
+    .rating > label:active {
+        position:relative;
+        top:2px;
+        left:2px;
+    }
+.rating{
+    font-size: 8px;
+}
+.lead-price-hamed{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 96px;
+    right: -6px;
+    z-index: 14;
+    
+}
+.hamedo{
+position: relative;
+    top: -5px;
+    right: -203px;
+}
+.hamedo2 {
+    display: inline-block;
+    position: absolute;
+    top: 56px;
+    right: 371px;
+}
+.hamedo3 {
+    display: inline-block;
+    position: absolute;
+    top: 106px;
+    right: 318px;
+  }
+  .ino-shop{
+        margin: 6px 15px 0 5px;
+  }
+  .footer-copyright{
+        padding: 12px;
+        background-color: #dfdfdf;
+  }
+  .soci{
+    padding: 12px 128px;
+    background-color: #f5f5f5;
+  }
+  .log{
+    font-size: 20px;
+    padding: 2px 20px;
+  }
+  .title{
+    font-size: 20px !important;
+  }
+  .logq{
+    color: #09131dad;
+  }
+
+
+
+
+
+.robbon_badge {
+background-color: #ef5661;
+    height: 82px;
+    right: -52px;
+    position: absolute;
+    top: -50px;
+    width: 100px;
+    -webkit-transform: rotate(45deg);
+}
+
+.robbon_badege_text {
+    color: #f5f5f5;
+    font-size: 19px;
+    font-weight: bold;
+    right: -18px;
+    top: 61px;
+    position: absolute;
+    width: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*responsive*/
+@media screen and (max-width: 380px)  {
+.rating {
+    font-size: 6px;
+}
+.hamedo {
+
+    right: -175px;
+}
+.hamedo3 {
+    top: 105px;
+    right: 247px;
+}
+.hamedo2 {
+    top: 58px;
+    right: 294px;
+}
+.card .card-title {
+    margin: -14px 113px 17px 0;
+}
+.card-text {
+    margin: 0px 110px 10px 0;
+}
+.soci {
+    padding: 12px 84px;
+}
+nav .sidenav-trigger {
+    margin: 0 -5px;
+}
+}
+    @media only screen
+    and (min-device-width : 340px)
+    and (max-device-width : 350px){
+.lead-price-hamed {
+    top: 105px;
+    font-size: 5px;
+}
+.hamedo {
+    right: -165px !important;
+    font-size: 10px;
+}
+.hamedo2 {
+    top: 61px !important;
+    right: 243px !important;
+    font-size: 13px;
+}
+.hamedo3 {
+    top: 107px !important;
+    right: 209px !important;
+    font-size: 12px;
+}
+.soci {
+    padding: 8px 79px !important;
+}
+}
+
+
+
+    @media only screen
+    and (min-device-width : 310px)
+    and (max-device-width : 319px){
+     .card .card-title {
+        margin: -15px 92px 17px 0;
+}
+.card-text {
+        margin: 0px 89px 10px 0;
+}
+     .rating {
+    font-size: 5px;
+     }
+      .lead-price-hamed {
+    top: 117px;
+}
+.hamedo {
+    right: -154px !important;
+    font-size: 10px;
+}
+.hamedo2 {
+    top: 76px !important;
+    right: 235px !important;
+}
+.hamedo3 {
+    top: 122px !important;
+    right: 193px !important;
+}
+.soci {
+   padding: 8px 64px !important;
+}        
+    }
+    
+    
+    @media(width : 320px){
+     .card .card-title {
+        margin: -15px 92px 17px 0;
+}
+.card-text {
+        margin: 0px 89px 10px 0;
+}
+     .rating {
+    font-size: 5px;
+     }
+      .lead-price-hamed {
+    top: 117px;
+}
+.hamedo {
+    right: -154px !important;
+    font-size: 10px;
+}
+.hamedo2 {
+    top: 76px !important;
+    right: 235px !important;
+}
+.hamedo3 {
+    top: 122px !important;
+    right: 193px !important;
+}
+.soci {
+   padding: 8px 64px !important;
+}      
+
+
+    }
+    @media only screen
+    and (min-device-width : 321px)
+    and (max-device-width : 339px){
+        .rating {
+    font-size: 5px;
+}
+.lead-price-hamed {
+    top: 122px;
+}
+.hamedo {
+    font-size: 11px;
+    right: -136px;
+}
+.hamedo3 {
+    top: 125px;
+    right: 213px;
+    font-size: 11px;
+}
+.hamedo2 {
+    top: 75px;
+    right: 218px;
+    font-size: 11px;
+}
+.soci {
+    padding: 12px 59px;
+}
+    }
+        @media only screen
+    and (min-device-width : 351px)
+    and (max-device-width : 370px){
+        .rating {
+    font-size: 5px;
+}
+.lead-price-hamed {
+    top: 104px;
+}
+.hamedo {
+    right: -170px;
+    font-size: 11px;
+}
+.hamedo3 {
+    top: 105px;
+    right: 240px;
+    font-size: 12px;
+}
+.hamedo2 {
+    top: 58px;
+    right: 273px;
+    font-size: 11px;
+}
+    }
